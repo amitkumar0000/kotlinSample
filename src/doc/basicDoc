@@ -33,3 +33,14 @@ secondary constructor which need to call base constructor.
 Custom getter and setter
 
 backing field can reference via field
+
+4 Visibility Modifier
+=====================
+    public : anywhere
+    private : same class
+    internal : anywhere in same module
+    protected : subclass
+
+Kotlin Data Class
+===================
+Data class take care of toString, equals and hascode and getter/setter

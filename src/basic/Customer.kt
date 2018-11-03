@@ -26,4 +26,10 @@ class Customer(val id: Int, var name: String, val yearofbirth: Int){
         }
 }
 
-class Seller(val id:Int,val name:String="seller")
+data class Seller(var id:Int,var name:String="seller", var email:String)
+
+data class Seller1(var id:Int,var name:String="seller", var email:String){
+    override fun toString(): String {
+        return super.toString()
+    }
+}

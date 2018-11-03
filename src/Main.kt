@@ -1,5 +1,6 @@
 import basic.Basic
 import basic.Customer
+import basic.Seller
 
 class Main{
     companion object {
@@ -20,6 +21,20 @@ class Main{
 
             println("id:: ${cust.id}  name::${cust.name} age: ${cust.age} adhar no: ${cust.adharno}")
 
+            dataClassOperation()
+
+        }
+
+        private fun dataClassOperation() {
+            var seller1 = Seller(1,"ram","ram@gmail.com")
+            var seller2 = Seller(1,"ram","ram@gmail.com")
+            if(seller1 == seller2)
+                println("Seller are same $seller1")
+
+            var seller3 = seller1.copy(email="seller3@gmail.com")
+            seller3.id = 2
+            println(seller3)
+            println(seller2)
         }
 
         fun basicOperation(){
