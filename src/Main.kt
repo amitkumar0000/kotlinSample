@@ -19,8 +19,15 @@ class Main{
 
 //            globalObjet()
 
-            interfaceDemo()
+//            interfaceDemo()
 
+            nullDemo()
+
+        }
+
+        private fun nullDemo() {
+            var n = NullDemo()
+            n.printMessage()
         }
 
         private fun interfaceDemo() {
