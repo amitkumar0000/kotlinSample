@@ -52,3 +52,9 @@ Kotlin Enum class
 Object in kotlin without class
     implement singleton pattern
 
+Inheritance
+        By default class/method are final
+        To allow inheritance add open in class/method definition
+
+Abstract class same as java
+

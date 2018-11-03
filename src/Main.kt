@@ -15,10 +15,18 @@ class Main{
 //            normalOperation()
 //            dataClassOperation()
 
-            enumClassOPeration()
+//            enumClassOPeration()
 
-            globalObjet()
+//            globalObjet()
 
+            interfaceDemo()
+
+        }
+
+        private fun interfaceDemo() {
+            var c = sellPerson()
+
+            c.store()
         }
 
         private fun globalObjet() {

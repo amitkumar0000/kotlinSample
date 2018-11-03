@@ -3,7 +3,12 @@ package basic
 import java.lang.IllegalArgumentException
 import java.util.*
 
-class Customer(val id: Int, var name: String, val yearofbirth: Int){
+
+open class Person{
+    open fun validate(){}
+}
+
+class Customer(val id: Int, var name: String, val yearofbirth: Int): Person(){
     init {
         name = name.toUpperCase()
         println("Inside init block $id  $name ")
@@ -24,6 +29,10 @@ class Customer(val id: Int, var name: String, val yearofbirth: Int){
                 throw  IllegalArgumentException("Adhar number should start with AD")
             field = value
         }
+
+    override fun validate() {
+        super.validate()
+    }
 }
 
 data class Seller(var id:Int,var name:String="seller", var email:String)
