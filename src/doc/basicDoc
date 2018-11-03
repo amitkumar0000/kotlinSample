@@ -1,0 +1,13 @@
+
+Variables
+    var : create mutable variable
+
+    val : create ReadOnly/Immutable variable
+
+Any : top level class object
+        kotlin.unit
+
+        if else can be use as expression
+        when can be use as expression
+
+        Unit is similar to void
