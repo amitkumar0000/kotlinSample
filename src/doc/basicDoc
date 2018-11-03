@@ -1,5 +1,6 @@
 
 Variables
+===========
     var : create mutable variable
 
     val : create ReadOnly/Immutable variable
@@ -10,4 +11,25 @@ Any : top level class object
         if else can be use as expression
         when can be use as expression
 
-        Unit is similar to void
+Default return type is Unit is similar to void
+Nothing is also return type. :- it never return throw an exception
+
+function
+==========
+     default parameter and named parameter
+     unlimited no of parameter using vararg
+
+Class
+========
+Kotlin class does not have fields.
+It has properties
+
+lateinit is not allowed for primitive type
+Custructor in class can be pass in class argument
+
+init block in class is executed when instance of class is defined
+
+secondary constructor which need to call base constructor.
+Custom getter and setter
+
+backing field can reference via field

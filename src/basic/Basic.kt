@@ -95,4 +95,31 @@ class Basic{
         println(" \nwhenvalue  $whenValue")
     }
 
+    fun hello():Unit{
+        print("Hello ")
+    }
+
+    fun throwException():Nothing{
+        throw Exception("throw a exception")
+    }
+
+    //single line function expression
+    fun sum(x:Int,y:Int) = x+y
+
+    fun sum(x:Int,y:Int,z:Int=10) = x+y+z
+
+    //function with default parameter and named parameter
+    fun printDetail(name: String, email:String = "", phone:String){
+        println("$name  $email $phone")
+    }
+
+    fun printStrings(vararg  strings: String){
+        printS(*strings);
+    }
+
+    fun printS(vararg  strings: String){
+        for(s in strings)
+            println(s)
+    }
+
 }
