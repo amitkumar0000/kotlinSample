@@ -1,7 +1,4 @@
-import basic.Basic
-import basic.Customer
-import basic.Priority
-import basic.Seller
+import basic.*
 
 class Main{
     companion object {
@@ -20,6 +17,18 @@ class Main{
 
             enumClassOPeration()
 
+            globalObjet()
+
+        }
+
+        private fun globalObjet() {
+            println(Global.pi)
+
+            var localObj = object{
+                val pi = 31.4
+            }
+
+            println(localObj.pi)
         }
 
         private fun enumClassOPeration() {

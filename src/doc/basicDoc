@@ -47,5 +47,8 @@ Data class take care of toString, equals and hascode , getter/setter and copy fu
 
 
 Kotlin Enum class
------------------
+
+
+Object in kotlin without class
+    implement singleton pattern
 
