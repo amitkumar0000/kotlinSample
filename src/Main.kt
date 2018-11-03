@@ -1,5 +1,6 @@
 import basic.Basic
 import basic.Customer
+import basic.Priority
 import basic.Seller
 
 class Main{
@@ -13,6 +14,24 @@ class Main{
         }
 
         private fun classOPeration() {
+
+//            normalOperation()
+//            dataClassOperation()
+
+            enumClassOPeration()
+
+        }
+
+        private fun enumClassOPeration() {
+            var priority = Priority.MAJOR
+            println(priority)
+            println("${priority.value} ${priority.nme} ${priority.ordinal} ${priority.name}")
+
+            for(prio in Priority.values())
+                println("${prio.ordinal} ${prio.name}")
+        }
+
+        private fun normalOperation(){
             var cust = Customer(10, "hari",33 )
             cust.adharno = "AD1232"
 
@@ -20,9 +39,6 @@ class Main{
 
 
             println("id:: ${cust.id}  name::${cust.name} age: ${cust.age} adhar no: ${cust.adharno}")
-
-            dataClassOperation()
-
         }
 
         private fun dataClassOperation() {

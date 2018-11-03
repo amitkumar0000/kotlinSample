@@ -43,4 +43,9 @@ backing field can reference via field
 
 Kotlin Data Class
 ===================
-Data class take care of toString, equals and hascode and getter/setter
+Data class take care of toString, equals and hascode , getter/setter and copy function
+
+
+Kotlin Enum class
+-----------------
+
