@@ -5,7 +5,7 @@ class SingletonClassDemo{
     var num:Int = 0
     private constructor()
 
-    companion object {
+     companion object Factory{
         var _singleInstance:SingletonClassDemo? = null
 
          fun  getInstance():SingletonClassDemo?{

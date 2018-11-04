@@ -67,3 +67,5 @@ Null Safety
 
 Nested Classes in Kotlin
 
+Companion objects are a way in which we can define what would be the equivalent to static methods in Java
+

@@ -27,10 +27,19 @@ class Main{
 
 //            innerClassDemo()
 
-            singletonClassDemo()
+//            singletonClassDemo()
+
+            talkingToJava()
 
 
 
+        }
+
+        private fun talkingToJava() {
+            var talkToJava = CustomJava()
+            talkToJava.id = 123
+            talkToJava.name = "kotlin"
+            println("Talk to java ${talkToJava.id}  ${talkToJava.name}")
         }
 
         private fun singletonClassDemo() {
