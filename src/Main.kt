@@ -25,10 +25,20 @@ class Main{
 
 //            customGetterSetter()
 
-            innerClassDemo()
+//            innerClassDemo()
+
+            singletonClassDemo()
 
 
 
+        }
+
+        private fun singletonClassDemo() {
+            var singleObj = SingletonClassDemo.getInstance()
+            singleObj?.printMessage()
+
+            var singleObj1 = SingletonClassDemo.getInstance()
+            singleObj1?.printMessage()
         }
 
         private fun innerClassDemo() {
