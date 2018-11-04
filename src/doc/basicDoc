@@ -65,3 +65,5 @@ Null Safety
     if null is required put '?' after type
         e.g var message:String? = null
 
+Nested Classes in Kotlin
+

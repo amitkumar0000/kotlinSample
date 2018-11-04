@@ -23,7 +23,20 @@ class Main{
 
 //            nullDemo()
 
-            customGetterSetter()
+//            customGetterSetter()
+
+            innerClassDemo()
+
+
+
+        }
+
+        private fun innerClassDemo() {
+            var nestedclass = DirectoryExplorer("hadi")
+            nestedclass.listfolder("abc","hadi")
+
+            var innerClass = nestedclass.InnerClass()
+            innerClass.permissionCheck()
 
         }
 
