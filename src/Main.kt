@@ -21,7 +21,20 @@ class Main{
 
 //            interfaceDemo()
 
-            nullDemo()
+//            nullDemo()
+
+            customGetterSetter()
+
+        }
+
+        private fun customGetterSetter() {
+            var custom = Inventory()
+            println("amount ${custom.amount}")
+            custom.amount = 200.0
+            println("amount ${custom.amount}")
+            custom.amount = 40.0
+            println("amount ${custom.amount}")
+
 
         }
 

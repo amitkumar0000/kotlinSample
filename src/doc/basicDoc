@@ -60,6 +60,7 @@ Abstract class same as java
 
 
 Null Safety
+==============
     A variable can't be initialized with null
     if null is required put '?' after type
         e.g var message:String? = null
