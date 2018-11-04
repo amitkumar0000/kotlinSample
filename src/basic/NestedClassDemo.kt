@@ -7,7 +7,7 @@ class DirectoryExplorer(val user: String){
         }
     }
 
-    //inner class has excess to field of outer class.
+    //inner class has access to field of outer class.
     inner class InnerClass(){
         fun permissionCheck(){
             if(user != "hadi")
