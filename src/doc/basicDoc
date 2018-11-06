@@ -51,6 +51,9 @@ Kotlin Enum class
 
 Object in kotlin without class
     implement singleton pattern
+    
+    Companion object, which is an object that is common to all instances of that class. 
+    It’d come to be similar to static fields in Java.
 
 Inheritance
         By default class/method are final
