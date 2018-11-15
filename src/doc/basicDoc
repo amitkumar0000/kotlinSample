@@ -72,3 +72,43 @@ Nested Classes in Kotlin
 
 Companion objects are a way in which we can define what would be the equivalent to static methods in Java
 
+Primary and Secondary Constuctor
+================================
+A class in Kotlin can have a primary constructor and one or more secondary constructors.
+The primary constructor is part of the class header: it goes after the class name (and optional type parameters).
+    class Person constructor(firstName: String) { ... }
+
+If the primary constructor does not have any annotations or visibility modifiers,
+the constructor keyword can be omitted:
+    class Person(firstName: String) { ... }
+    
+The primary constructor cannot contain any code.
+Initialization code can be placed in initializer blocks, 
+which are prefixed with the init keyword    
+
+The class can also declare secondary constructors, 
+which are prefixed with constructor:
+
+    class Person {
+    constructor(parent: Person) {
+        parent.children.add(this)
+    }
+    }
+    
+  If the class has a primary constructor, each secondary constructor needs to delegate to the primary constructor,
+  either directly or indirectly through another secondary constructor(s).
+  Delegation to another constructor of the same class is done using the this keyword:  
+  
+  class Person(val name: String) {
+    constructor(name: String, parent: Person) : this(name) {
+        parent.children.add(this)
+    }
+}
+
+
+
+
+
+
+
+
