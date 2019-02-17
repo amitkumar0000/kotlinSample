@@ -7,7 +7,50 @@ class Main{
             System.out.println("Hello kotlin")
 
 //            basicOperation()
-            classOPeration()
+//            classOPeration()
+
+              highOrderFunction()
+        }
+
+        private fun highOrderFunction() {
+            val firsterson = HPerson("john",29)
+            val secongperson = HPerson("rahul   ",30)
+
+            val olderPerson = if(firsterson.age > secongperson.age) firsterson else secongperson
+
+            olderPerson.name.printline()
+
+            run{
+                if(firsterson.age > secongperson.age) firsterson else secongperson
+            }.age.printline()
+
+            with(firsterson){
+                age = age + 2
+                "$age"
+            }.printline()
+
+            firsterson.run{
+                age = age + 2
+                "$age"
+            }.printline()
+
+            firsterson.let {
+                modifiedPerson -> modifiedPerson.age +1
+                "Age is now ${modifiedPerson.age}"
+            }
+
+            firsterson.apply {
+                age += 1
+                name = "ram"
+            }.printperson()
+
+
+            secongperson.also {
+                it ->
+                it.age += 2
+                it.name = "Rahul"
+            }.printperson()
+
         }
 
         private fun classOPeration() {
